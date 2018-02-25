@@ -1,5 +1,7 @@
 package id.liqu.laundry.ui;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -20,13 +22,12 @@ public class DashboardActivity extends BaseActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
                     return true;
                 case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+
                     return true;
                 case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+
                     return true;
             }
             return false;
